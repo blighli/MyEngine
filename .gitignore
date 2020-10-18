@@ -2,8 +2,6 @@
 .idea
 
 build/**
-!build/cmake_mingw.bat
-!build/cmake_vs2019
 
 # Compiled Object files
 *.o
