@@ -1,6 +1,11 @@
-#include <iostream>
+#include <QApplication>
+#include <QMainWindow>
 
-int main()
+int main(int argc, char* argv[])
 {
-    return 0;
+    QApplication EditorApp(argc, argv);
+    QMainWindow Editor;
+    Editor.show();
+
+    return EditorApp.exec();
 }

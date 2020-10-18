@@ -6,7 +6,7 @@ elseif(WIN32)
     add_executable(${PROJECT_NAME} WIN32 ${SOURCE_FILES})
 endif()
 
-target_link_libraries(${PROJECT_NAME} ${LIBS})
+target_link_libraries(${PROJECT_NAME} ${LIBS} Qt5::Widgets)
 
 if(APPLE)
     set_target_properties(${PROJECT_NAME} PROPERTIES MACOSX_BUNDLE_BUNDLE_NAME "${EXE_NAME}")
